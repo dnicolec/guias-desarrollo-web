@@ -1,0 +1,30 @@
+body {
+    background-color: lightblue;
+}
+
+.contenedor {
+    font-size: 20px;
+}
+
+.contenedor h2 {
+    text-decoration: underline;
+    color: white; /* #12 */
+}
+
+#parrafo1 {
+    color: navy;
+    font-weight: bold; /* #13 */
+}
+
+#parrafo2 {
+    text-transform: uppercase;
+    text-align: justify; /* #14 */
+}
+
+#parrafo3 {
+    font-size: 12px; /* #15 */
+}
+
+.palabra-style {
+    font-style: italic;
+}
