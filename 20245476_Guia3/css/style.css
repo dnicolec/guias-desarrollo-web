@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  text-align: justify;
+  /* Para Ejercicio 2 */
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+header {
+  background: #16A085;
+  height: 130px;
+  overflow: hidden;
+  /* Para Ejercicio 2, posicionamiento fijo superior */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+footer {
+  /* margin-top: 20px; */
+  background: #16A085;
+  height: 50px;
+  /* Para Ejercicio 2, posicionamientos fijo inferior */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header div, footer div {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+section {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative; /* para que los hijos con position absolute se posicionen respecto a este contenedor */
+}
+
+section article {
+  font-size: 0.9rem;
+  height: 340px;
+  width: 32.33%;
+  margin: 0.5%;
+  border: 2px dashed #16A085;
+  padding: 1%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+section article img {
+  height: 180px;
+  max-width: 80%;
+  margin: 5px auto;
+  display: block;
+}
+
+footer div {
+  padding-top: 1rem;
+}
+
+section article:nth-child(2) {
+  background-color: rgba(70, 130, 180, 0.9);
+  position: static;
+  /* con position: absolute se mueve desde el primer antecesor con posición no static,
+   relative o absolute, que es el body. Además, permite que las demás cajas tomen el su espacio (sale completamente
+   del flujo normal del documento) */
+  /* con position: static no se mueve y left y top no tienen efecto, ya que es un elemento no posicionado */
+  left: 100px; /* mueve a la derecha 100px, porque es distancia desde esa dirección y no hacia esa dirección */
+  top: 50px; /* mueve hacia abajo 50px */
+  /* visibility: hidden; */
+  /* display: none; */
+}
+
+/* Pregunta 40:
+Con display: none, el segundo artículo desaparece completamente del flujo del documento y los otros artículos
+ocupan el espacio que queda vacío y con el visibility: hidden, el artículo sigue ocupando su espacio, pero no
+es visible */
+
+/* Pregunta 31:
+Las otras cajas no han tomado el espacio que dejó libre el segundo artículo, porque al usar position: relative,
+el elemento se mueve visualmente pero sigue ocupando su espacio original en el flujo del documento.
+De esa manera, los otros artículos no se ajustan para llenar ese espacio vacío */
+
+/* Pregunta 36:
+Position: relative permite mover un elemento respecto a su posición original sin sacarlo del flujo del documento,
+mientras que position: absolute lo saca del flujo y lo posiciona respecto a su primer antecesor con posición no
+static (relative o absolute). Esto significa que los elementos con position: relative no afectan la disposición
+de otros elementos, mientras que los con position: absolute pueden superponerse a otros elementos que ocupan el
+espacio liberado */
