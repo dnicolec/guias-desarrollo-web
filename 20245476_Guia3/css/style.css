@@ -89,18 +89,18 @@ footer div {
   padding-top: 1rem;
 }
 
-section article:nth-child(2) {
+/*section article:nth-child(2) {
   background-color: rgba(70, 130, 180, 0.9);
   position: static;
   /* con position: absolute se mueve desde el primer antecesor con posición no static,
    relative o absolute, que es el body. Además, permite que las demás cajas tomen el su espacio (sale completamente
    del flujo normal del documento) */
   /* con position: static no se mueve y left y top no tienen efecto, ya que es un elemento no posicionado */
-  left: 100px; /* mueve a la derecha 100px, porque es distancia desde esa dirección y no hacia esa dirección */
-  top: 50px; /* mueve hacia abajo 50px */
+/*  left: 100px; /* mueve a la derecha 100px, porque es distancia desde esa dirección y no hacia esa dirección */
+/*  top: 50px; /* mueve hacia abajo 50px */
   /* visibility: hidden; */
-  /* display: none; */
-}
+/*  display: none;
+/*}
 
 /* Pregunta 40:
 Con display: none, el segundo artículo desaparece completamente del flujo del documento y los otros artículos
