@@ -3,42 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guías de Desarrollo Web - Debbie Cruz 20245476</title>
+    <title>Portafolio Estudiantil - Desarrollo Web I</title>
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header id="titulo-principal">
-        <h1>Guías de Desarrollo Web - Debbie Cruz 20245476</h1>
-    </header>
+    <header class="header-principal">
+        <div class="contenedor">
+            <nav>
+                <strong class="logo">PORTAFOLIO</strong>
+                <input type="checkbox" id="menu-toggle">
+                
+               <ul id="menu-principal">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                    <li><a href="#materia">SOBRE LA MATERIA</a></li>
+                    <li><a href="#guias">GUÍAS</a></li>
+                    <li><a href="#foda">ANÁLISIS FODA</a></li>
+              </ul>
+               
+               <label for="menu-toggle" id="boton-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </nav>
+        </div>
+   </header>
 
-    <section>
-        <h2>Guía 1</h2>
-        <nav>
-            <ul>
-                <li><a href="20245476_Guia1/html/estilos-embebidos.html">Ejemplo Estilos Embedidos</a></li>
-                <li><a href="20245476_Guia1/html/ejemplo2.html">Ejemplo 2</a></li>
-                <li><a href="20245476_Guia1/html/paises.html">Ejemplo Países</a></li>
-                <li><a href="20245476_Guia1/html/serie-tv.html">Ejercicio Serie TV</a></li>
-            </ul>
-        </nav>
+    <main>
+        <section id="inicio">
+            <figure class="imagen-principal">
+                <img src="img/portafolio.png" alt="Portafoleo de Desarrollo Web I">
+            </figure>
+        </section>
 
-        <h2>Guía 2</h2>
-        <nav>
-            <ul>
-                <li><a href="20245476_Guia2/pelicula.html">Película</a></li>
-                <li><a href="20245476_Guia2/tablero.html">Tableto</a></li>
-                <li><a href="20245476_Guia2/mi-biografia.html">Mi Biografía</a></li>
-            </ul>
-        </nav>
+        <!-- Sobre mí -->
+        <section id="sobre-mi">
+            <article>
+                <figure class="imagen-personal">
+                    <img src="20245476_Guia2/img/foto.jpg" alt="Foto">
+                </figure>
+                <div class="texto-sobre-mi">
+                    <h2 class="titulo-seccion">Sobre mí</h2>
+                    <h1>
+                        MI NOMBRE ES<br>
+                        <span>Debbie Cruz</span>
+                    </h1>
+                    <p class="subtitulo-inicio">INGENIERÍA DE SOFTWARE Y NEGOCIOS DIDITALES</p>
+                    <p class="carnet">Carnet: 20245476</p>
+                    <p class="texto-inicio">Soy estudiante de segundo año de la Escuela Superior de Economía y Negocios
+                        (ESEN). Actualmente, estoy cursando la materia de Desarrollo Web I.
+                    </p>
+                </div>
+            </article>
+        </section>
 
-        <h2>Guía 3</h2>
-        <nav>
-            <ul>
-                <li><a href="20245476_Guia3/oscares.html">Óscares</a></li>
-                <li><a href="20245476_Guia3/menu_horizontal.html">Menú Horizontal</a></li>
-                <li><a href="20245476_Guia3/index.html">Viajeros</a></li>
-                <li><a href="20245476_Guia3/analisis.html">Ejercicio Cartas</a></li>
-            </ul>
-        </nav>
-    </section>
+        <!-- Sobre la materia -->
+        <section id="materia">
+            <div class="contenedor">
+                <header>
+                    <h2 class="titulo-seccion">Sobre la materia</h2>
+                    <h3>DESARROLLO WEB I</h3>
+                </header>
+                
+                <div class="cuadricula-materia">
+                    <article class="tarjeta">
+                        <h4>Descripción</h4>
+                        <p>La materia abarca los conceptos básicos de HTML, CSS y JavaScript. Mediante los cuales
+                            los estudiantes serán capaces de crear páginas web atractivas y prácticas, aplicaciones
+                            interactivas de front-end y comprender la arquitectura de las mismas
+                        </p>
+                    </article>
+                    
+                    <article class="tarjeta">
+                        <h4>Función clave</h4>
+                        <p>Construir soluciones a través de algoritmos y procedimientos informáticos, utilizando las
+                            herramientas de programación de software para resolver problemas en diferentes ámbitos
+                        </p>
+                    </article>
+                    
+                    <article class="tarjeta">
+                        <h4>Contenidos</h4>
+                        <ul>
+                            <li>Unidad I: Introducción al HTML</li>
+                            <li>Unidad II: Introducción a las hojas de estilo en cascada</li>
+                            <li>Unidad III: Maquetación de sitios web</li>
+                            <li>Unidad IV: Frameworks de diseño web responsivo</li>
+                            <li>Unidad V: Introducción a JavaScript</li>
+                            <li>Unidad VI: El modelo de objetos del documento (DOM) y JavaScript asíncrono</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="tarjeta">
+                        <h4>Metodología</h4>
+                        <ul>
+                            <li>Lectura previa y visualización de materiales audiovisuales</li>
+                            <li>Sesiones de trabajo presencial</li>
+                            <li>Actividades no evaluadas de aprendizaje</li>
+                            <li>Sesiones en línea consistentes en clases y ejercicios autodirigidos</li>
+                            <li>Proyecto grupal</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guías -->
+        <section id="guias">
+            <div class="contenedor">
+                <header>
+                    <h2 class="titulo-seccion">Mis trabajos</h2>
+                    <h3>GUÍAS</h3>
+                </header>
+                
+                <div class="cuadricula-guias">
+                    <article class="tarjeta-guia">
+                        <figure>
+                            <img src="https://www.sepe.es/HomeSepe/ca/dam/jcr:da4bb51f-6ed9-49b4-adca-36eb9b74a519/curso-html-google.2020-01-29-10-52-18.png"
+                                alt="Guía 1">
+                        </figure>
+                        <div>
+                            <h4>Guía 1: Introducción a HTML y CSS</h4>
+                            <p>Se identificó la estructura básica de un documento web, se aplicaron las reglas de estilo
+                            CSS a los elementos HTML usando estilos embedidos y hojas de estilo externas, y se utilizaron
+                            los selectores básicos y propiedades CSS para fuentes y textos
+                            </p>
+                            <nav>
+                                <a href="20245476_Guia1/estilos-embebidos.html">Estilos Embedidos</a>
+                                <a href="20245476_Guia1/ejemplo2.html">Julio Cortazar</a>
+                                <a href="20245476_Guia1/paises.html">Países</a>
+                                <a href="20245476_Guia1/serie-tv.html">Ejercicio Serie TV</a>
+                            </nav>
+                        </div>
+                    </article>
+                    
+                    <article class="tarjeta-guia">
+                        <figure>
+                            <img src="https://centrogeo.github.io/JSvis/img/boxModel.png"
+                                alt="Guía 2">
+                        </figure>
+                        <div>
+                            <h4>Guía 2: Selectores CSS avanzados y Modelo de caja</h4>
+                            <p>Se utilizaron y combinaron selectores CSS avanzados, se aprendió sobre la utilidad de
+                                las pseudo-clases y pseudo-elementos CSS, y se creó una página web utilizando el Modelo
+                                de caja e identificando sus respectivas partes
+                            </p>
+                            <nav>
+                                <a href="20245476_Guia2/pelicula.html">Película</a>
+                                <a href="20245476_Guia2/tablero.html">Tableto</a>
+                                <a href="20245476_Guia2/mi-biografia.html">Ejercicio Mi Biografía</a>
+                            </nav>
+                        </div>
+                    </article>
+                    
+                    <article class="tarjeta-guia">
+                        <figure>
+                            <img src="https://www.mejoresagencias.com/wp-content/uploads/2025/03/maquetacion-en-diseno-web-conceptos-y-herramientas-esenciales-1.jpg"
+                                alt="Guía 3">
+                        </figure>
+                        <div>
+                            <h4>Guía 3: Posicionamiento, visualización y maquetación de sitios web</h4>
+                            <p>Se utilizaron las propiedades CSS relacionadas con la visualización de elementos y los
+                                diferentes tipos de posicionamiento CSS, y se maquetaron sitios web con diseños fijos y fluidos
+                            </p>
+                            <nav>
+                                <a href="20245476_Guia3/oscares.html">Óscares</a>
+                                <a href="20245476_Guia3/menu_horizontal.html">Menú Horizontal</a>
+                                <a href="20245476_Guia3/index.html">Viajeros</a>
+                                <a href="20245476_Guia3/analisis.html">Ejercicio Cartas</a>
+                            </nav>
+                        </div>
+                    </article>
+                    
+                    <article class="tarjeta-guia">
+                        <figure>
+                            <img src="https://www.webfx.com/wp-content/uploads/2021/10/iStock-612224522.jpg"
+                                 alt="Guía 4">
+                        </figure>
+                        <div>
+                            <h4>Guía 4: Introducción al Responsive Design</h4>
+                            <p>Se crearon y estilizaron formularios utilizando los controles de HTML5, se utilizó la
+                                meta-etiqueta viewport, se definieron las medias queries para aplicar reglas de estilo
+                                en función del ancho de viewport de navegador y se utilizaron los conocimientos
+                                adquiridos en la asignatura para la construcción de páginas web responsivas
+                            </p>
+                            <nav>
+                                <a href="20245476_Guia4/mediaqueries.html">Media Queries</a>
+                                <a href="#">Ejercicio Portafolio estudiantil</a>
+                            </nav>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Análisis FODA -->
+        <section id="foda">
+            <div class="contenedor">
+                <header>
+                    <h2 class="titulo-seccion">Autoevaluación</h2>
+                    <h3>ANÁLISIS FODA</h3>
+                </header>
+                
+                <div class="cuadricula-foda">
+                    <article class="tarjeta-fortalezas">
+                        <header>
+                            <h4>Fortalezas</h4>
+                        </header>
+                        <ul>
+                            <li>Dominio sólido de los elementos, semántica y atributos HTML</li>
+                            <li>Interés en el diseño visual y la estética, lo que favorece mi desempeño en las unidades
+                                de CSS, layout y diseño responsivo</li>
+                            <li>Comprensión profunda del Modelo de caja, posicionamiento y maquetación</li>
+                            <li>Capacidad para crear diseños responsivos</li>
+                            <li>Habilidad para comprender conceptos lógicos de JavaScript</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="tarjeta-oportunidades">
+                        <header>
+                            <h4>Oportunidades</h4>
+                        </header>
+                        <ul>
+                            <li>Aprender HTML, CSS y JavaScript me abre la posibilidad de desarrollar sitios web complejos
+                                y mejorar mi empleabilidad</li>
+                            <li>Tener conocimientos en Bootstap, Flexbox y CSS Grid me permite adaptarme a los estándares
+                                modernos del diseño web responsivo</li>
+                            <li>Dominio del DOM y JSON que me permiten desarrollar aplicaciones web interactivas</li>
+                            <li>Habilidades transferibles a diseño UX/UI</li>
+                            <li>Con lo aprendido, a lo largo de la materia, tengo la capacidad para trabajar en proyectos
+                                relacionados con el desarrollo web</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="tarjeta-debilidades">
+                        <header>
+                            <h4>Debilidades</h4>
+                        </header>
+                        <ul>
+                            <li>Una mayor práctica en la integración completa de HTML, CSS y JS dentro de un mismo
+                                proyecto</li>
+                            <li>Profundizar en la lógica avanzada de JavaScript (asincronía, manejo de APIs y
+                                almacenamiento local)</li>
+                            <li>Conocimiento limitado de patrones de diseño avanzados</li>
+                            <li>Mejorar la organización del código y estructura de archivos</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="tarjeta-amenazas">
+                        <header>
+                            <h4>Amenazas</h4>
+                        </header>
+                        <ul>
+                            <li>Limitaciones de tiempo para practicar fuera de la materia</li>
+                            <li>Falta de experiencia en proyectos reales con clientes</li>
+                            <li>Dificultad para mantenerme actualizada con nuevas herramientas</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contenedor">
+            <p>Portafolio Estudiantil - Debbie Cruz © 20245476</p>
+            <nav id="redes-sociales">
+                <a href="https://github.com/dnicolec/guias-desarrollo-web.git">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
 </html>

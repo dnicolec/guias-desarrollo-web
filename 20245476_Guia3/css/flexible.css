@@ -180,12 +180,12 @@ footer {
     font-style: italic;
 }
 
- #galeria .plan {
-     font-size: 1em;
-     /* margin-bottom: 10px; */
-     margin: 30px 1.4% 10px; /* 10/960 = 1.4% */
-     display: inline-block;
-     float: none;
-     vertical-align: top;
-     padding-bottom: 1px;
+#galeria .plan {
+    font-size: 1em;
+    /* margin-bottom: 10px; */
+    margin: 30px 1.4% 10px; /* 10/960 = 1.4% */
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    padding-bottom: 1px;
  }
