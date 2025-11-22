@@ -458,19 +458,93 @@ footer p {
 
 /* Pantallas pequeñas */
 @media screen and (max-width: 480px) {
-  #menu-principal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: var(--header-h);
-    width: 100%;
-    background-color: #1a1a1a;
-    flex-direction: column;
-    padding: 1.25rem 1rem;
-    gap: 0.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    z-index: 1100;
+    #menu-principal {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: var(--header-h);
+        width: 100%;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        padding: 1.25rem 1rem;
+        gap: 0.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1100;
   }
+
+    #menu-toggle:checked ~ #menu-principal {
+        display: flex;
+    }
+
+    #boton-menu {
+        display: flex;
+    }
+
+    #menu-toggle:checked ~ #boton-menu span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    #menu-toggle:checked ~ #boton-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked ~ #boton-menu span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    #sobre-mi article {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .imagen-personal {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    .cuadricula-materia {
+        grid-template-columns: 1fr;
+    }
+
+    .cuadricula-guias {
+        grid-template-columns: 1fr;
+    }
+
+    .cuadricula-foda {
+        grid-template-columns: 1fr;
+    }
+
+    footer .contenedor {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .texto-sobre-mi h1 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Pantallas medianas */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #menu-principal {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: var(--header-h);
+        width: 100%;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        padding: 1.25rem 1rem;
+        gap: 0.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1100;
+    }
 
   #menu-toggle:checked ~ #menu-principal {
     display: flex;
@@ -493,80 +567,6 @@ footer p {
   }
 
   #sobre-mi article {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .imagen-personal {
-    flex: 1;
-    max-width: 300px;
-  }
-
-  .cuadricula-materia {
-    grid-template-columns: 1fr;
-  }
-
-  .cuadricula-guias {
-    grid-template-columns: 1fr;
-  }
-
-  .cuadricula-foda {
-    grid-template-columns: 1fr;
-  }
-
-  footer .contenedor {
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-  }
-
-  .texto-sobre-mi h1 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-  }
-}
-
-/* Pantallas medianas */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  #menu-principal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: var(--header-h);
-    width: 100%;
-    background-color: #1a1a1a;
-    flex-direction: column;
-    padding: 1.25rem 1rem;
-    gap: 0.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    z-index: 1100;
-  }
-
-  #menu-toggle:checked ~ #menu-principal {
-    display: flex;
-  }
-
-  #boton-menu {
-    display: flex;
-  }
-
-  #menu-toggle:checked ~ #boton-menu span:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
-  }
-
-  #menu-toggle:checked ~ #boton-menu span:nth-child(2) {
-    opacity: 0;
-  }
-
-  #menu-toggle:checked ~ #boton-menu span:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
-  }
-
-#sobre-mi article {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
@@ -598,38 +598,38 @@ footer p {
 
 /* Pantallas grandes */
 @media screen and (min-width: 769px) {
-  .contenedor {
-    padding: 0;
-  }
+    .contenedor {
+        padding: 0;
+    }
 
-  #boton-menu {
-    display: none;
-  }
+    #boton-menu {
+        display: none;
+    }
 
-  #menu-principal {
-    position: static;
-    display: flex !important;
-    gap: 2rem;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
-  }
+    #menu-principal {
+        position: static;
+        display: flex !important;
+        gap: 2rem;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
 
-  #sobre-mi article {
-    flex-direction: row;
-    text-align: left;
-    gap: 4rem;
-  }
+    #sobre-mi article {
+        flex-direction: row;
+        text-align: left;
+        gap: 4rem;
+    }
 
-  .cuadricula-materia {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  }
+    .cuadricula-materia {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 
-  .cuadricula-guias {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
+    .cuadricula-guias {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 
-  .cuadricula-foda {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
+    .cuadricula-foda {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }
